@@ -3,33 +3,29 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 ![yarn downloads](https://img.shields.io/npm/dm/cra-template-typescript-redux)
 
-# A quick start Redux + TypeScript Create React App template
+# Tradeling Frontend Code Challenge Solution
 
-An opinionated quick start [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with configured **Redux**, **TypeScript**, **React Router**, **Enzyme** and custom **ESlint** configuration.
+This code works through the use of **React**, **TypeScript** and **Redux** to filter users, issues and repositories.
 
-Original Create React App README available [here](./README_CRA.md)
+## The Task
 
-## Usage
+There will be two input fields. The first is a search field for the user to type the text. While the other is a dropdown where user can either pick "Users", "Issues", or "Repositories" to define the entities that they want to search.
 
-```bash
-npx create-react-app your-project-name --template typescript-redux
-```
+When the user doesn't have any input or clears the input, the input fields should be shown in the middle of the page.
 
-Or
+## The Approach
 
-```bash
-yarn create react-app your-project-name --template typescript-redux
-```
+## The Design
 
-`npx` command installs the most recent stable version of CRA from npm.
+The link to the figma design is here
 
-`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
+## The Libraries Used
 
-## Motivation
+Styled Components
+Redux- Persist
 
-You know the pain. You start a new project from scratch and need to configure it again and again. It needs routing, ok you setup Router, then you need Redux - ok, oh 😩Redux boilerplate is taking so much time to type. Wait... what if you could have all the tools you want just from the beginning? I want to focus on building amazing projects and not spending hours configuring. That's why I've created this template. It's here for you to use.
 
-## Available Scripts
+## Helpful Commands
 
 In the project directory, you can run:
 
@@ -59,44 +55,8 @@ Testing is done with [Enzyme](https://airbnb.io/enzyme/).
 
 I added `prettier` to force consistent formatting. Don't like trailing semicolons? Feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside `.prettierrc` file to match your code style.
 
-## Styles/CSS/Styling
-
-Just for the styling purpose of the example app, I used [Materialize](https://materializecss.com/). The template is shipped with the Materialize by default. I want to make sure that this template is style agnostic so you can plugin any CSS-in-JS or whatever library/framework you want to use for styles on your own.
-
-### How to remove materialize
-
-In order to remove Materialize [MaterializeCSS](https://materializecss.com/) navigate to the `public` folder, open `index.html` and remove following CDN link in the `<head>` lines 18-22:
-
-```html
-<!--Import materialize.css-->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-/>
-```
-
-Remove or adjust all the `classNames` related to the Materialize and feel free to use your own styling.
-
 ## Eslint configurations
 
 The template extends CRA ESLint rules with a custom set, tailored for the reasonable and clean development process.
 
 Eslint rules are commented for your convenience feel free to tweak or remove them inside `.eslintrc`. No judgment.
-
-## How to create custom Create React App (CRA) templates
-
-I created a step by step guide on how to create your own templates.
-
-[View on Medium](https://medium.com/@alexgrischuk/how-to-create-custom-create-react-app-cra-templates-73a5196edeb)
-
-[View on personal blog](https://grischuk.de/how-to-create-custom-create-react-app-cra-templates)
-
-[View on dev.to](https://dev.to/alexandrg/how-to-create-custom-create-react-app-cra-templates-3nca)
-
-## My other templates
-
-[A light weight Create React App template with Recoil for state management](https://github.com/alexandr-g/cra-template-recoil)
-
-## Thank you
-
-I hope this template will be helpful for you and you will love using it 🖤
